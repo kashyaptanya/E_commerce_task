@@ -11,7 +11,7 @@ const index = () => {
             <Routes>
                 <Route element={<AdminRoutes />}>
                     <Route path='/' element={<Dashboard />} />
-                    <Route path='/productsShop' element={<Products />} />
+                    <Route path='/productsShop' element={<Products />} /> 
                     <Route path='/productDetail' element={<ProductDetail />} />
                 </Route>
             </Routes>
