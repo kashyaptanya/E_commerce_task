@@ -11,14 +11,13 @@ const ProductDetail = () => {
     const [getLoading, setGetLoading] = useState(true)
 
     const productsData = useSelector((state) => state?.common?.single_product);
-    const { title, images, category, brand, description, rating, tags, price, discountPercentage, returnPolicy, reviews } = productsData
     useEffect(() => {
         setTimeout(() => {
             setGetLoading(false)
         }, 500);
 
     }, [])
-console.log("brand",brand);
+    console.log("brand", productsData?.title);
 
     return (
         <>
@@ -29,7 +28,7 @@ console.log("brand",brand);
                         <div className='cardBG text-center d-flex align-items-center justify-content-center' style={{ minHeight: '475px' }}>
                             {
                                 getLoading ? <Skeleton.Image active /> :
-                                    <ImageComponent src={images ? images?.[0] : StaticImage.NoIMg} height={500} />
+                                    <ImageComponent src={productsData?.images?.[0] ? productsData?.images?.[0] : StaticImage.NoIMg} height={500} />
                             }
                         </div>
                     </Col>
@@ -39,24 +38,24 @@ console.log("brand",brand);
                                 getLoading ? <Skeleton active /> :
                                     <>
                                         <div className='d-flex gap-3'>
-                                            <CommonTitle title={brand ? brand : ""} cssStyle={`heading fs-5 mb-0 `} style={{ fontStyle: "italic" }} />
-                                            <CommonTitle title={title ? title : ""} cssStyle={`heading text-dark fs-5 mb-0 FW`} />
+                                            <CommonTitle title={productsData?.brand ? productsData?.brand : ""} cssStyle={`heading fs-5 mb-0 `} style={{ fontStyle: "italic" }} />
+                                            <CommonTitle title={productsData?.title ? productsData?.title : ""} cssStyle={`heading text-dark fs-5 mb-0 FW`} />
                                         </div>
-                                        <CommonTitle title={description ? description : ""} cssStyle={`desc fs-6 mb-3`} />
-                                        <CommonTitle title={category ? category : ""} cssStyle={`heading fs-6 mb-1`} />
+                                        <CommonTitle title={productsData?.description ? productsData?.description : ""} cssStyle={`desc fs-6 mb-3`} />
+                                        <CommonTitle title={productsData?.category ? productsData?.category : ""} cssStyle={`heading fs-6 mb-1`} />
                                         <div className='d-flex gap-3 mb-3'>
 
-                                            <CommonTitle title={price ? `Price : $${price}` : ""} cssStyle={`heading fs-6 mb-1`} />
+                                            <CommonTitle title={productsData?.price ? `Price : $${productsData?.price}` : ""} cssStyle={`heading fs-6 mb-1`} />
                                             {
-                                                discountPercentage &&
-                                                <CommonTitle title={`${discountPercentage}% OFF!`} cssStyle={`heading fs-6 ss text-white px-2`} />}
+                                                productsData?.discountPercentage &&
+                                                <CommonTitle title={`${productsData?.discountPercentage}% OFF!`} cssStyle={`heading fs-6 ss text-white px-2`} />}
                                         </div>
-                                        <Rate disabled allowHalf defaultValue={rating ? rating : 0} />
+                                        <Rate disabled allowHalf defaultValue={productsData?.rating ? productsData?.rating : 0} />
                                         <div className='d-flex gap-2 mb-3'>
                                             {
-                                                tags?.length > 0 ? <>
+                                                productsData?.tags?.length > 0 ? <>
                                                     {
-                                                        tags?.map((data) => {
+                                                        productsData?.tags?.map((data) => {
                                                             return (
                                                                 <CommonTitle title={`#${data}`} cssStyle={`desc fs-6 mb-0`} style={{ fontWeight: "600" }} />
                                                             )
@@ -69,7 +68,7 @@ console.log("brand",brand);
 
                                         </div>
                                         <CommonTitle title={`Return`} cssStyle={`heading fs-6 mb-0`} />
-                                        <CommonTitle title={returnPolicy} cssStyle={`desc fs-6`} />
+                                        <CommonTitle title={productsData?.returnPolicy} cssStyle={`desc fs-6`} />
                                     </>
                             }
                         </div>
@@ -90,9 +89,9 @@ console.log("brand",brand);
                                 />
                                 :
                                 <>
-                                    {reviews?.length > 0 ? <>
+                                    {productsData?.reviews?.length > 0 ? <>
                                         {
-                                            reviews?.map((data) => {
+                                            productsData?.reviews?.map((data) => {
                                                 return (
                                                     <>
                                                         <Col xs={24} sm={24} md={12} lg={10} xl={10}>
