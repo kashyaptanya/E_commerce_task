@@ -1,0 +1,53 @@
+
+.lg__screen {
+    display: flex;
+    align-items: center;
+}
+
+
+.menu__icon {
+    display: none;
+}
+
+
+.popover__menu {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.lg__screen a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 20px;
+    /* font-size: 1.3rem; */
+
+}
+
+.lg__screen a {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 1227px) {
+    .lg__screen {
+        display: none;
+    }
+
+    .menu__icon {
+        display: flex;
+    }
+}

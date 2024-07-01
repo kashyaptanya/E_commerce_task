@@ -1,0 +1,2 @@
+export const PRODUCTS = 'PRODUCTS';
+export const SINGLE_PRODUCTS = 'SINGLE_PRODUCTS'

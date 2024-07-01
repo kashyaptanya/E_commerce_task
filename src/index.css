@@ -1,0 +1,205 @@
+html {
+  scroll-behavior: smooth;
+  --blackColor: #1C1C1E;
+  --darkBlackColor: #161616;
+  --whiteColor: #fff;
+  --layoutTheme: #191919;
+  --layoutSiderMenu: #23211e;
+  --tomatoRed: #ff4444;
+  --parrotGreen: #00D539;
+  --pinkcolor: #f1082917;
+  --greycolor: #808080c9;
+
+  --defaultThemecolor: #344767;
+  --defaultColorOne: #2596be;
+  --defaultColorTwo: #073066;
+  --defaultGradientColor: linear-gradient(to left, var(--defaultColorTwo), var(--defaultColorOne));
+  --defaultGradientColorBanner: linear-gradient(to left, var(--pinkcolor), var(--whiteColor));
+
+  --defaultFontFamilyRacing: "Racing Sans One", sans-serif;
+
+  --fontFamilyRoboto: "Roboto", sans-serif;
+}
+
+
+*,
+body {
+  box-sizing: border-box;
+  font-family: var(--fontFamilyRoboto);
+
+}
+.ss{
+  background: linear-gradient(to left, red, orange);
+}
+.input_style{
+  height: 3rem;
+}
+
+.commonPadding {
+  padding-inline: 6rem;
+}
+
+.path_link {
+  font-weight: 600 !important;
+  color: var(--defaultThemecolor) !important;
+}
+
+.lg__screen a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 1rem;
+}
+
+.lg__screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Banner */
+.banner_bg {
+  background: var(--pinkcolor);
+}
+
+.shop_head {
+  color: var(--defaultThemecolor) !important;
+  font-size: 5rem !important;
+  font-weight: bold !important;
+}
+
+.commonButton {
+  color: var(--defaultThemecolor);
+  border-color: var(--defaultThemecolor);
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.15s ease-in;
+  font-weight: 700;
+}
+
+.button_common {
+  box-shadow: 0 4px 7px -1px rgba(0, 0, 0, 0.11), 0 2px 4px -1px rgba(0, 0, 0, 0.07);
+  font-weight: 700;
+  color: var(--whiteColor);
+  background-color: var(--defaultThemecolor);
+  border: 1px solid transparent;
+  padding: 1.2rem 1.8rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+}
+
+
+
+.heading {
+  color: var(--defaultThemecolor) !important;
+  font-weight: 700 !important;
+}
+.FW{
+  font-weight: 500 !important;
+}
+
+.desc {
+  color: var(--greycolor) !important;
+  font-weight: 300 !important;
+}
+
+.cardBG {
+  background-color: var(--whiteColor);
+}
+
+.cardShop {
+  background-color: var(--whiteColor);
+  border-radius: 18px;
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.4) 0px 7px 29px 0px
+}
+
+/* Footer */
+.bgFooter {
+  background-image: linear-gradient(310deg, #141727, #3a416f);
+}
+.footer_icon a{
+  color: var(--whiteColor);
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+/*  responsive */
+
+@media (max-width: 1980px) and (min-width :1440px) {
+  .commonPaddingOrder {
+    padding-inline: 6rem;
+  }
+}
+
+@media (max-width: 1440px) and (min-width :1024px) {
+  .commonPaddingOrder {
+    padding-inline: 6rem;
+  }
+}
+
+@media (max-width: 1025px) and (min-width :992px) {
+  .commonPadding {
+    padding-inline: 2rem;
+  }
+
+  .shop_head {
+    font-size: 2rem !important;
+
+  }
+
+  .maindiv {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 767px) and (min-width :425px) {
+  .commonPadding {
+    padding-inline: 1rem;
+  }
+
+  .shop_head {
+    font-size: 2rem !important;
+
+  }
+
+  .maindiv {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 424px) and (min-width :375px) {
+  .commonPadding {
+    padding-inline: 1rem;
+  }
+
+  .shop_head {
+    font-size: 2rem !important;
+
+  }
+
+  .maindiv {
+    padding: 2rem 0;
+  }
+}
+
+@media (max-width: 374px) {
+  .commonPadding {
+    padding-inline: 1rem;
+  }
+
+  .shop_head {
+    font-size: 2rem !important;
+
+  }
+
+  .maindiv {
+    padding: 2rem 0;
+  }
+}
