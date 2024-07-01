@@ -89,7 +89,7 @@ const ProductsShop = () => {
                     <CommonSelect placeholder='Sort by' defaultValue={`Sort by`} cssStyle={`input_style`} mapData={quanityOption} inlineStyle={{ minWidth: '8rem' }} onChangeSelect={handleQuanity} />
                 </div>
                 <CommonTitle title={`Shop Collection`} cssStyle={`fs-1 py-5 mb-0 heading text-center`} />
-                <div className='d-flex py-5 gap-5 flex-wrap cardBG justify-content-center'>
+                <div className='d-flex py-5 gap-5 px-2 flex-wrap cardBG justify-content-center'>
                     {
                         productsList?.products?.length > 0 ? <>
                             {

@@ -35,7 +35,7 @@ const Dashboard = () => {
             </section>
             <section className=''>
                 <CommonTitle title={`View Tranding Products`} cssStyle={`fs-3 py-5 heading text-center`} />
-                <div className='d-flex py-5 flex-wrap gap-5 cardBG justify-content-center'>
+                <div className='d-flex py-5 px-2 flex-wrap gap-5 cardBG justify-content-center'>
                     {
                         topRatedProducts?.map((data) => {
                             return (
