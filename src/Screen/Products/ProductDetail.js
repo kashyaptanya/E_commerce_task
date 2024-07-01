@@ -18,7 +18,8 @@ const ProductDetail = () => {
         }, 500);
 
     }, [])
-    
+console.log("brand",brand);
+
     return (
         <>
             <section className=''>
