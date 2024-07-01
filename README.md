@@ -1,7 +1,12 @@
-![Screenshot (2)](https://github.com/kashyaptanya/e-commerce/assets/103633834/87e49e21-5df6-4364-88a5-18fdb80e8078)
-![Screenshot (5)](https://github.com/kashyaptanya/e-commerce/assets/103633834/38953ee3-792a-473c-a525-a1fb751a1cf0)
-![Screenshot (6)](https://github.com/kashyaptanya/e-commerce/assets/103633834/c9ab16cd-b1b8-4128-8d3c-582b2ca85323)
-![Screenshot (7)](https://github.com/kashyaptanya/e-commerce/assets/103633834/fa96f9dd-763a-4c54-a1a3-cf3f86b7cb92)
+![image](https://github.com/kashyaptanya/E_commerce_task/assets/103633834/03015aab-b469-4d3e-9f2c-66bfb995415f)
+![image](https://github.com/kashyaptanya/E_commerce_task/assets/103633834/609ea9e9-f5a4-43cd-ad30-d3ac5eeca77b)
+![image](https://github.com/kashyaptanya/E_commerce_task/assets/103633834/6effae23-5910-4469-8abd-08661c4738af)
+![image](https://github.com/kashyaptanya/E_commerce_task/assets/103633834/a55aa1b0-1112-4b74-a386-67d12b3685c6)
+![image](https://github.com/kashyaptanya/E_commerce_task/assets/103633834/0c6ff504-14c5-4778-b39d-14c884132565)
+
+
+
+
 
 According to Task :
 List all product 
