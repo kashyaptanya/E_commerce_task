@@ -3,7 +3,6 @@ import { apiService } from "../../Services/api";
 import { myLogger } from "../../Utils/const";
 import { store } from "../../store";
 
-
 export const apiCallFun = ({ url, method = 'POST', data, hasFile = false, callBackData = () => { }, dispatchType = null }) => async (dispatch) => {
     const adminToken = store?.getState()?.common?.jwtToken?.payload;
     let config = {
